@@ -7,15 +7,9 @@ LAYOUT=" "
 ID=$2
 echo "The bundle id is : " $ID
 
-if [ $ID == "step2" ]
+if [ $ID == "testing" ]
 then 
-	LAYOUT="../src/main/webapp/WEB-INF/views/express/step2.jsp"
-elif [ $ID == "homejs" ]
-then
-	LAYOUT="../src/main/webapp/WEB-INF/layouts/header2.jsp"
-elif [ $ID == "components" ]
-then
-	LAYOUT="../src/main/webapp/WEB-INF/layouts/footer-cms.jsp"
+	LAYOUT="../html-test/testfile.html"
 fi
 
 echo "The layout path is : "$LAYOUT

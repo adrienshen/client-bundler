@@ -1,13 +1,5 @@
-#Before the deployment to production:
-Make sure you have node and npm package cleancss install globally:
-`$ sh sudo npm install -g clean-css`
-
-Then run:
-`$ sh build_all.sh`
-
-1. Will delete the old build files, bundle up scripts, minify them, put a version according to the timestamp and replace the script references in the .jsp files. 
-2. Then will bundle up the home css files, minify them, put timestamp versioning on it, and replace the reference in the .jsp files. 
-3. There will be a final option to proceed to mvn clean package if you want.
+#Build system automation for a company project.
+Want to create a general framework for this, using parts of the existing system.
 	
 ##For QA
 
