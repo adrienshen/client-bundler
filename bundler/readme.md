@@ -1,6 +1,9 @@
 #Build system automation for a company project.
-Want to create a general framework for this, using parts of the existing system.
-	
+Working to generalize these scripts to be used for any project, using parts of the existing system.
+
+Run using `$ build_all.sh`
+Revert your source using `$ revert_src.sh`
+
 ##For QA
 
 Preferable not to run the build scripts, because it will make much debugging more difficult.
