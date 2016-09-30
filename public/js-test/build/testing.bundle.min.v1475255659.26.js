@@ -1,1 +1,0 @@
-var str1="this is the first string",string2="this is the second string";console.log(string1);console.log(string2);

@@ -1,6 +1,7 @@
 # rewrite jsp script tags.
 echo "The new bundle file name is: "
 echo "The output path is : " $1
+BUILD_PATH="/public/js-test/build"
 BUNDLE=$1
 LAYOUT=" "
 #js/components/build/components.bundle.min.v1473153203.33
@@ -16,6 +17,6 @@ echo "The layout path is : "$LAYOUT
 
 sed -i '' '/<!-- BUNDLE:'$ID' -->/,/<!-- ..BUNDLE:'$ID' -->/c\ 
 <!-- BUNDLE:'$ID' -->\
-<script type="text/javascript" src="'$BUNDLE'"></script>\
+<script type="text/javascript" src="'$BUILD_PATH$BUNDLE'"></script>\
 <!-- ..BUNDLE:'$ID' -->\
     ' $LAYOUT
